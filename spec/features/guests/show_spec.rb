@@ -11,7 +11,7 @@ require "rails_helper"
 
 RSpec.describe "guests show page" do
   before(:each) do
-    
+    test_data
   end
   it "displays a form with the option to add a room to the guest" do
     visit "/guests/#{@guest_1.id}"
