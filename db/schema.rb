@@ -15,8 +15,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_24_152243) do
   enable_extension "plpgsql"
 
   create_table "guest_rooms", force: :cascade do |t|
-    t.bigint "guest_id", null: false
-    t.bigint "room_id", null: false
+    t.bigint "guest_id"
+    t.bigint "room_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["guest_id"], name: "index_guest_rooms_on_guest_id"
