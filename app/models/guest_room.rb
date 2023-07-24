@@ -1,3 +1,4 @@
 class GuestRoom < ApplicationRecord
-  has_many :rooms
+  belongs_to :room
+  belongs_to :guest
 end

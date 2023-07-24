@@ -1,4 +1,4 @@
 class Guest < ApplicationRecord
   has_many :rooms
-  belongs_to :guest_rooms
+  has_many :guest_rooms
 end
